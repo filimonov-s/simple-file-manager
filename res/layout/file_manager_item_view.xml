@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+    <ImageView
+            android:id="@+id/file_manager_item_image_view"
+            android:src="@drawable/dir"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+    <TextView
+            android:id="@+id/file_manager_item_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@+id/file_manager_item_check_box"
+            android:layout_toRightOf="@id/file_manager_item_image_view"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    />
+
+    <CheckBox
+            android:id="@id/file_manager_item_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:clickable="false"
+            />
+
+</RelativeLayout>
